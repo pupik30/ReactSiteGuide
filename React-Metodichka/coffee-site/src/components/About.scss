@@ -1,0 +1,29 @@
+@use '../styles/variables' as *;
+
+.about {
+  padding-block: 60px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  &__card {
+    padding: 28px;
+    background: $color-card;
+    border-radius: $radius;
+    box-shadow: 0 6px 20px rgba(59, 36, 24, 0.08);
+
+    h3 {
+      color: $color-accent;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about__list {
+    grid-template-columns: 1fr;
+  }
+}
