@@ -1,0 +1,41 @@
+@use '../styles/variables' as *;
+
+.hero {
+  padding-block: 80px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__text {
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.15;
+      color: $color-dark;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: $color-muted;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: $radius;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
