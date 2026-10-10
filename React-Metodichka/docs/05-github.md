@@ -39,7 +39,7 @@ git init
 git add .
 git commit -m "Первая версия сайта"
 git branch -M main
-git remote add origin https://github.com/pupik30/ReactSiteGuide.git 
+git remote add origin https://github.com/ваш-ник/my-react-site.git
 git push -u origin main
 ```
 

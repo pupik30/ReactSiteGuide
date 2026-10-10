@@ -1,0 +1,47 @@
+@use '../styles/variables' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: $color-dark;
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block: 14px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 28px;
+
+    a:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__cart {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__nav {
+    display: none;
+  }
+}
